@@ -1,6 +1,7 @@
 
-*{
 
+*{
+scroll-behavior: smooth;
  background-color: #ffffff;   
 font-family: 'Poppins',sans-serif;
 
@@ -40,11 +41,12 @@ justify-content: space-between;
    margin-right: 50px;
    color:gray ;
    cursor: pointer;
+   font-weight: bold;
 
 }
 .nav-items:hover {
-	text-decoration: underline #8071d0 solid 3px;
-	color:black;
+	border-bottom:3px solid#8071d0 ;
+    color: black;
 }
 
 #btn{
@@ -123,6 +125,7 @@ cursor: pointer;
     box-shadow: 7px 2px 8px rgb(190, 186, 186);
     border-radius: 15px;
     background-color: #ffff;
+    
  
   }
 .pink{
@@ -160,24 +163,35 @@ cursor: pointer;
 } */
 
 .card-checkbox{
+    border-radius: 50%;
+}
+.hover-tick{
+    display: none;
+    border-radius: 50%;
+}
+.row-card:hover>.card-checkbox{
     display: none;
 }
+.row-card:hover>.hover-tick{
+    display: block;
+}
+
+
 .card-user{
     display: flex;
 }
 
 .card-text{
     margin: 0 auto;
+    background: none;
 }
 
-.row-card:hover .card-checkbox{
-    display: flex;
-}
 
 
 
 
 .card-date{
+    background: none;
     margin-left: 23px;
     margin-right: 23px;
 }
@@ -185,12 +199,15 @@ cursor: pointer;
 /* .pink .yellow .green .red{
     margin-left: 23px;
 } */
-
-.main{
+ .main{
     margin-left: 39px;
-}
+} 
 
 
+
+
+
+ 
 
 
  
